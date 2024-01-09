@@ -105,5 +105,20 @@ namespace StringManipulation
             return fileReader.ReadString(fileName);
         }
 
+        public List<int> GetListNumberImpar(int itervalMin, int itervalMax)
+        {
+            List<int> NumbersImpar = new();
+
+            for (int i = itervalMin; i <= itervalMax; i++)
+            {
+                if(i % 2 != 0)
+                {
+                    NumbersImpar.Add(i);
+                }
+            }
+
+            return NumbersImpar;
+        }
+
     }
 }
